@@ -1,0 +1,9 @@
+{
+	"dependencies": {
+		"@types/node": "^25.0.8",
+		"dotenv": "^17.2.3",
+		"openai": "^6.16.0",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.9.3"
+	}
+}
