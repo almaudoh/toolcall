@@ -272,7 +272,7 @@ async function runMultiTurnExample() {
 
       // Get final response
       response = await openai.chat.completions.create({
-        model: 'gpt-4o',
+        model: MODEL_NAME,
         messages: messages,
       });
 
@@ -299,7 +299,7 @@ async function runStreamingExample() {
   console.log('🤖 Assistant: ', '');
 
   const stream = await openai.chat.completions.create({
-    model: 'gpt-4o',
+    model: MODEL_NAME,
     messages: messages,
     tools: tools,
     stream: true,
@@ -360,7 +360,7 @@ async function runErrorHandlingExample() {
     ];
 
     const response = await openai.chat.completions.create({
-      model: 'gpt-4o',
+      model: MODEL_NAME,
       messages: messages,
       tools: tools,
       tool_choice: 'auto',
